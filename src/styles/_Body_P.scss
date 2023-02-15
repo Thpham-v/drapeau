@@ -2,6 +2,17 @@
 	background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
 	background-blend-mode: multiply;
 
+	@media (max-width: 880px) {
+		.navbar {
+			font-size: 0.6px;
+		}
+
+		.footer {
+			font-size: 0.4px;
+		}
+
+	}
+
 	.body_content {
 		display: flex;
 		flex-direction: column;
@@ -11,5 +22,26 @@
 		overflow: auto;
 		color: #C5C6C7;
 		padding: 40px;
+
+		@media (max-width: 880px) {
+			width: 100%;
+			flex-wrap: wrap;
+			padding: 1%;
+
+			.filter {
+				flex-direction: column;
+			}
+
+			.about {
+				h1 {
+					font-size: 20px;
+				}
+
+				p {
+					font-size: 15px;
+					padding-bottom: 1em;
+				}
+			}
+		}
 	}
 }
